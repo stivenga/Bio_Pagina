@@ -34,6 +34,23 @@ body::before {
   z-index: -1; /* Asegura que la imagen esté detrás del contenido */
 }
 
+.navbar-nav {
+  display: flex;
+  text-align: center;
+  gap: 1rem;
+}
+
+.nav-item {
+  background-color: var(--color-2greem);
+  border-radius: 20px;
+  padding: 0 8px 0 8px;
+
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
 a {
   color: #007bff;
   text-decoration: none;

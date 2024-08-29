@@ -39,6 +39,10 @@ nav {
 
 }
 
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
 
 
 
@@ -211,9 +215,7 @@ nav {
 
 }
 
-.navbar-collapse {
-    justify-content: flex-end;
-}
+
 
 .object-container {
     display: flex;
