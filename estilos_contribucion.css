@@ -1,0 +1,296 @@
+/* Estilos Generales */
+
+:root {
+  --color-agreen: #22321f;
+  --color-1green: #333D29;
+  --color-2greem: #414833;
+  --color-3green: #656D4A;
+  --color-4green: #A4AC86;
+  --color-5green: #C2C5AA;
+  --color-cl: #B6AD90;
+}
+
+/* Estilo para el fondo parallax */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Asegura que el body ocupe toda la altura de la vista */
+  overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
+/* Aplicar la imagen de fondo a todo el cuerpo */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/img/fondoo.jpeg'); /* Ruta de la imagen */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1; /* Asegura que la imagen esté detrás del contenido */
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  background-color: #00000000;
+  padding: 10px 0;
+  border-radius: 30px ;
+}
+
+
+/* Sección de Contribución */
+.contribucion-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-contribucion h2 {
+  font-size: 3rem;
+  color: #B6AD90;
+  margin-bottom: 15px;
+}
+
+.text-contribucion p {
+  font-size: 1.1rem;
+  color: #B6AD90;
+}
+
+.contribucion-separator {
+  border-left: 5px solid #22321f;
+  height: auto;
+}
+
+.logos-contribucion{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(34, 50, 31, 0.596);
+  font-size: 20pt;
+  padding: 1.2rem 2rem;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 600px;
+}
+.logos-contribucion h3 {
+  font-size: 2rem;
+  color: #B6AD90;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.logos-contribucion i {
+  font-size: 2.5rem;
+  transition: color 0.3s ease;
+}
+
+.logos-contribucion i:hover {
+  color: #007bff;
+}
+
+.logos-contribucion .fs-2 {
+  font-size: 4rem; /* Tamaño del icono */
+  color: #22321f;  /* Color del icono */
+}
+
+.logos-contribucion .fab {
+  transition: color 0.3s ease;
+}
+
+.logos-contribucion a:hover .fab {
+  color: #00ff00; /* Color del icono al pasar el mouse */
+}
+
+
+/* Sección de Formulario */
+
+.seccion-contribucion-2 {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: rgba(34, 50, 31, 0.9);
+  max-width: fit-content;
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+
+.seccion-contribucion-2 h2{
+  color: #B6AD90;
+  font-size: 3rem;
+}
+
+.seccion-contribucion-2 p{
+  color: #B6AD90;
+  font-size: 1.1rem;
+}
+
+.image-container {
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  background-color: #414833; /* Color de fondo del botón (azul por defecto) */
+  color: #fff; /* Color del texto (blanco por defecto) */
+}
+
+/* Cambia el color de fondo y el color del texto del botón al pasar el mouse */
+.container .btn:hover{
+  background-color: #B6AD90; /* Color de fondo del botón (azul por defecto) */
+  color: #fff;
+}
+
+/* Sección de Cards */
+.seccion-contribucion-3 .card {
+  margin-bottom: 20px;
+  background-color: #656D4A;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.seccion-contribucion-3 .card:hover {
+  transform: translateY(-10px);
+}
+
+.seccion-contribucion-3 .card img {
+  width: 100%;
+  height: auto;
+}
+
+.seccion-contribucion-3 .card-body {
+  padding: 20px;
+}
+
+.seccion-contribucion-3 .card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.seccion-contribucion-3 .card-text {
+  font-size: 1rem;
+}
+
+.seccion-contribucion-3 h2{
+  color: #B6AD90;
+  font-size: 3rem;
+}
+
+.seccion-contribucion-3 p{
+  color: #B6AD90;
+  font-size: 1.1rem;
+}
+
+/* Sección Casos de Éxito */
+
+.casos-de-exito-section {
+  padding: 50px 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, #00000000, #000000c7, #000000, #000000, #000000, #000000c5, #00000000);
+  max-width: fit-content;
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.casos-de-exito-section .icon-container {
+  flex: 0 0 70px;
+  padding: 10px;
+}
+
+.casos-de-exito-section .icon-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  color: #B6AD90;
+}
+
+.casos-de-exito-section .card {
+  border: none;
+  background-color: transparent;
+  padding: 15px 0;
+}
+
+.casos-de-exito-section .card-title {
+  font-size: 1.3rem;
+  color: #B6AD90;
+  margin-bottom: 8px;
+}
+
+.casos-de-exito-section .card-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+.casos-de-exito-section h2{
+  color: #B6AD90;
+  font-size: 3rem;
+}
+
+.casos-de-exito-section .card-text{
+  color: #B6AD90;
+  font-size: 1.1rem;
+}
+
+footer {
+  background: linear-gradient(to bottom, #00000000, #000000);
+  color: var(--color-5green);
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 0 1rem 1rem ;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+.footer-links a {
+  color: var(--color-5green);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .footer-links li {
+      display: block;
+      margin: 0.5rem 0;
+  }
+}
+
